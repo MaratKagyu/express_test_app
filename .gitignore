@@ -1,2 +1,13 @@
 # JetBrains IDEs
 /.idea
+
+# node_modules
+/node_modules
+
+# Ignore local ENV files
+.env
+.env.local
+.env.prod
+
+# Output Dir
+/.dist

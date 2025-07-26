@@ -1,9 +1,11 @@
 {
   "name": "express_test_app",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "src/server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,16 @@
     "url": "https://github.com/MaratKagyu/express_test_app/issues"
   },
   "homepage": "https://github.com/MaratKagyu/express_test_app#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.1.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
 }
