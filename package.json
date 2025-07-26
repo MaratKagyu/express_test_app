@@ -1,0 +1,19 @@
+{
+  "name": "express_test_app",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaratKagyu/express_test_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaratKagyu/express_test_app/issues"
+  },
+  "homepage": "https://github.com/MaratKagyu/express_test_app#readme",
+  "description": ""
+}
