@@ -1,13 +1,14 @@
 import express from "express";
+import config from "./config/config";
 
 const app = express();
-const port = 80;
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send(`Hello World! Running as ${config.appMode}`);
 });
 
-app.listen(port, () => {
+
+app.listen(config.serverPort, () => {
   // Run when the server is ready
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Listening on port ${config.serverPort}`);
 });

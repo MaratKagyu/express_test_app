@@ -10,4 +10,4 @@
 .env.prod
 
 # Output Dir
-/.dist
+/dist
